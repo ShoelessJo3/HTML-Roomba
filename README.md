@@ -21,11 +21,18 @@ In the future the webpage could also return sensor data from the roomba (like ba
 
 Connect 6 to GND on the nodemcu 
 
+GND must be shared between the Roomba and node
+
 Connect 3 to Pin 23 on the nodemcu    
+This pin on the roomba recieves commands from the node
 
 Connect 5 to Pin 22 on the nodemcu 
 
+This pin on the roomba wakes the roomba up and lets us set its baud rate to 19200
+
 Connect 4 to Pin 21 on the nodemcu
+
+This pin sends information back to the nodemcu from the roomba
 
 You should also add a usb battery pack to power the nodemcu so your computer doesn't need to be attached to the Roomba
 
